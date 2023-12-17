@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure-Shop | Home</title>
+
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+
+    <style>
+      body{
+        background-color:gainsboro;
+      }
+        main{
+            margin-top: 70px;
+        } 
+        footer{
+            margin-top: 10px;
+        }
+        .card-body a{
+          text-decoration: none;
+          color: black;
+        }
+        .act-btn{
+          display: block;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          background-color: #f2f2f2;
+          color:#888;
+          font: 30px;
+          font-weight: bold;
+          border-radius: 50%;
+          -webkit-border-radius:50%;
+          text-decoration: none;
+          transform: ease all 1s;
+          position: fixed;
+          right: 30px;
+          bottom: 60px;
+          z-index: 4;
+        }
+        .act-btn:hover{
+            text-decoration: none;
+            color:white;
+            background-color: #888;
+        }
+        .navbar{
+          background-color: #0F4C75;
+        }
+        .btn{
+          background-color: #0F4C75;
+          color:white;
+        }
+        .disc{
+          text-decoration:line-through;
+        }
+        .card:hover{
+        transform: scale(1.10);
+      }
+      .contact:hover{
+        transform: scale(1.10);
+      }
+      #myUL{
+        list-style-type: none;
+        float: inline-start;
+      }
+      @media screen and (max-width: 991.98px){
+        .row-cols-1 > * {
+        flex: 0 0 auto;
+        width: 50%;
+        }
+        .container{
+          max-width: 720px;
+        }
+        .carousel-control-prev{
+          left: 50px;
+        }
+        .carousel-control-next{
+          right: 50px;
+        }
+      }
+    </style>
+</head>
+<body> 
+  <!--Navigation-->
+  <a href="#" class="act-btn">↑</a>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand me-5" href="#">Figure-Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-5">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="./produk.html">Product</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="./cara.html">Cara Belanja</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item me-5">
+                        <a class="nav-link position-relative" href="./keranjang.html">
+                            Keranjang
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                5
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!--Content-->
+    <main id="konten" class="container">
+      <!--Carousel--> 
+          <div class="container">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" align="center">
+                    <div class="carousel-item active">
+                        <a href="jjc.html"><img src="./img/banner1.jpg" class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="op.html"><img src="./img/banner2.jpg" class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="detail01.html"><img src="./img/banner3.jpg" class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="detail09.html"><img src="./img/banner4.jpg" class="d-block w-100" alt="..."></a>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <img src="/222.png" alt="" style="z-index: 1; left:-90px; width: 50px; position: relative;">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <img src="/333.png" alt="" style="z-index: 1; right:-90px; width: 50px; position: relative;">
+                </button>
+            </div>
+        </div>
+        <!--Search-->
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <div class="container col-6">
+                    <div class="input-group">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Kategori Produk</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="diskon.html">Diskon</a></li>
+                            <li><a class="dropdown-item" href="baru.html">Produk Baru</a></li>
+                            <li><a class="dropdown-item" href="terlaris.html">Produk Terlaris</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="produk.html">Semua Kategori</a></li>
+                        </ul>
+                        <input type="text" class="form-control" id="myInput" onkeyup="myFunction()" aria-label="Pencarian Produk...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Produk Baru-->
+        <div class="container mt-3" >
+          <h1 align="center">Produk Terbaru</h1>
+          <br>
+          <ul id="myUL">
+            <div class="row row-cols-1 row-cols-md-4 g-4" class="container">
+                <li>
+                  <div class="col shadow-lg" >
+                    <div class="card h-100"> 
+                      <img src="./img/Dio_1.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="detail01.html">1110-Nendoroid-Figure Anime Jojo Bizzare Adventure-Dio Brando</a></h5>
+                      </div>
+                      <div class="card-footer">
+                        <div class="disc card-text" >Rp 174.424</div><b>Rp 144.841</b><font color=red><b> -17% OFF</b></font>
+                        <div><font align="right"><p><i>6 Terjual</i></p></font></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="col shadow-lg">
+                    <div class="card h-100">
+                      <img src="./img/Nezuko_1.PNG" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"><a href="detail02.html">
+                        1120-Figure Anime Kimetsu no Yaiba-Kamado Nezuko</a></h5>
+                      </div>
+                      <div class="card-footer">
+                        <div class="disc card-text" >Rp 3.175.000</div><b>Rp 2.032.000</b><font color=red><b> -36% OFF</b></font>
+                        <div><font align="right"><p><i>15 Terjual</i></p></font></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="col shadow-lg">
+                    <div class="card h-100">
+                        <img src="./img/Naruto.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                       <a href="detail03.html"><h5 class="card-title">Figure Anime Naruto Shippuden-Naruto Uzumaki</h5></a> 
+                      </div>
+                      <div class="card-footer">
+                        <div class="disc card-text" >Rp 321.610</div><b>Rp 283.017</b><font color=red><b> -12% OFF</b></font>
+                        <div><font align="right"><p><i>5 Terjual</i></p></font></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="col shadow-lg">
+                    <div class="card h-100">
+                      <img src="./img/Mikey_4.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="detail04.html"><h5 class="card-title">2103-Figure Anime Tokyo Revenger-Sano Manjiro/Mikey</h5></a>
+                      </div>
+                      <div class="card-footer">
+                        <div class="disc card-text" >Rp 121.335</div><b>Rp 72.801</b><font color=red><b> -40% OFF</b></font>
+                        <div><font align="right"><p><i>8 Terjual</i></p></font></div>
+                      </div>
+                    </div>
+                </div>
+                </li>
+                <li>
+                  <div class="col shadow-lg">
+                    <div class="card h-100">
+                      <img src="./img/Kakyoin_1.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="detail05.html"><h5  class="card-title">1033-Nendoroid-Figure Anime JJBA-Kakyoin Noriaki</h5></a>
+                      </div>
+                      <div class="card-footer">
+                        <div class="disc card-text" >Rp 174.424</div><b>Rp 144.841</b><font color=red><b> -17% OFF</b></font>
+                        <div><font align="right"><p><i>11 Terjual</i></p></font></div>
+                      </div>
+                    </div>
+                </div>
+                </li>
+                <li>
+                  <div class="col shadow-lg">
+                    <div class="card h-100">
+                      <img src="./img/Ace.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="detail06.html"><h5 class="card-title">3010 - Action Figure - Anime One Piece - Portgas D. Ace</h5></a>
+                      </div>
+                      <div class="card-footer">
+                        <div class="disc card-text" >Rp 266.790</div><b>Rp 200.129</b><font color=red><b> -25% OFF</b></font>
+                        <div><font align="right"><p><i>4 Terjual</i></p></font></div>
+                      </div>
+                    </div>
+                </div>
+                </li>
+                <li>
+                  <div class="col shadow-lg">
+                    <div class="card h-100">
+                      <img src="./img/Jotaro_02_1.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="detail07.html">
+                        <h5 class="card-title">985-Nendoroid-Figure Anime JJBA-Jotaro Kujo</h5></a>
+                      </div>
+                      <div class="card-footer">
+                        <div class="disc card-text" >Rp 174.424</div><b>Rp 144.841</b><font color=red><b> -17% OFF</b></font>
+                        <div><font align="right"><p><i>13 Terjual</i></p></font></div>
+                      </div>
+                    </div>
+                </div>
+                </li>
+                <li>
+                  <div class="col shadow-lg">
+                    <div class="card h-100">
+                      <img src="./img/Itachi_01_3.PNG" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <a href="detail08.html">
+                        <h5 class="card-title">Figure Anime Naruto Shippuden-Itachi Uchiha</h5></a>
+                      </div>
+                      <div class="card-footer">
+                        <div class="disc card-text" >Rp 703.157</div><b>Rp 393.826</b><font color=red><b> -44% OFF</b></font>
+                        <div><font align="right"><p><i>10 Terjual</i></p></font></div>
+                      </div>
+                    </div>
+              </div> 
+                </li>
+          </div>
+          </ul>
+        </div>
+        <br><br>
+        <!--Produk Terlaris-->
+        <div class="row mx-0 mt-4 shadow-lg" style="background-color:white;">
+          <div class="d-flex flex-column w-100 pt-4 pb-2">
+            <div class="d-flex justify-content-between w-100 px-4 pb-2" style="color:#888">
+              <h4>Produk Terlaris</h4>
+              <div class="d-flex align-items-center">
+                <span class="me-2">
+                  <a href="terlaris.html" style="text-decoration: none; color: #888;">Lihat Semua </a>
+                </span>
+                <span class="h4 mb-0"><a href="terlaris.htmll" style="text-decoration: none; color: #888;">></a></span>
+              </div>
+            </div>
+            <!--Crausel-->
+            <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel" style="height: 300px;">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                    <div class="row h-100 mx-0" style="border-top: 2px solid #f2f2f2;">
+                        <div class="col-6 h-100 " style="border-right: 2px solid #f2f2f2; border-bottom: 2px solid #f2f2f2;" >
+                            <div class="d-flex w-100" style="height:87%">
+                              <div class="h-100 mr-2" style="width: 100%;">
+                                <a href="detail09.html"><img class="w-95 h-100  rounded mx-auto d-block" src="./img/Itachi_3.png" alt=""></a>
+                              </div>
+                            </div>
+                            <span class="position-relative h5" style="color:#888; top: 10px">
+                              Action Figure Uchiha Itachi
+                            </span>
+                        </div>
+                      <div class="col-6 h-100 " style="border-right: 2px solid #f2f2f2; border-bottom: 2px solid #f2f2f2;">
+                        <div class="d-flex w-100" style="height:87%;right:-10px;">
+                          <div class="h-100 mr-2" style="width: 100%;">
+                            <a href="detail10.html"><img class="w-95 h-100  rounded mx-auto d-block" src="./img/Luffy_2.png" alt=""></a>
+                          </div>
+                        </div>
+                        <span class="position-relative h5" style="color:#888; top: 10px">
+                          Action Figure Monkey D. Luffy
+                        </span>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item h-100 ">
+                  <div class="row h-100 mx-0" style="border-top: 2px solid #f2f2f2; border-bottom: 2px solid #f2f2f2;">
+                      <div class="col-6 h-100 " style="border-right: 2px solid #f2f2f2;">
+                        <div class="d-flex w-100" style="height:87%">
+                          <div class="h-100 mr-2" style="width: 100%;">
+                            <a href="detail11.html"><img class="w-95 h-100  rounded mx-auto d-block" src="./img/Tanjiro_1.png" alt=""></a>
+                          </div>
+                        </div>
+                        <span class="position-relative h5" style="color:#888; top: 10px">
+                          Action Figure Kamado Tanjiro
+                        </span>
+                    </div>
+                    <div class="col-6 h-100" style="border-right: 2px solid #f2f2f2">
+                      <div class="d-flex w-100" style="height:87%">
+                        <div class="h-100 mr-2" style="width: 100%;">
+                          <a href="detail12.html"><img class="w-95 h-100  rounded mx-auto d-block" src="./img/Nezuko_3_1.png" alt=""></a>
+                        </div>
+                      </div>
+                      <span class="position-relative h5" style="color:#888; top: 10px">
+                        Action Figure Kamado Nezuko 
+                      </span>
+                  </div>
+                  </div>
+              </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                <img src="/222.png" alt="" style="z-index: 1; left: -90px; width: 50px; position: relative;">
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                <img src="/333.png" alt="" style="z-index: 1; right: -90px; width: 50px; position: relative;">
+              </button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+    </main>
+    <!--Footer-->
+    <footer>
+      <nav class="navbar navbar-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#"><b>Figure-Shop</b>&copy; 2022</a>
+            <ul>
+              <h4 style="color:aliceblue;">Contact</h4>
+              <div class="contact">
+                <a href="#" style="color: white;text-decoration: none;"><img class="w-25" src="LogoWhatsapp.png"alt=""> Whatsapp</a>
+              </div>
+              <div class="contact">
+                <a href="#" style="color: white;text-decoration: none;"><img class="w-25" src="LogoInstagram.png" alt="" > Instagram</a>
+              </div>
+              </ul>
+          </div>
+      </nav>
+  </footer>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+      
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+</body>
+</html>
