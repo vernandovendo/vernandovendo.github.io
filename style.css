@@ -1,0 +1,218 @@
+/* Reset styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Additional header styles */
+header {
+    text-align: center;
+    background-color: #092635;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+section.in-view {
+    background-color: #040D12;
+    color: white; 
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+section h2 {
+    transition: color 0.3s ease;
+}
+
+section.in-view h2 {
+    color: #dc3545;
+
+}
+nav a.active {
+    color: #dc3545;
+    transform: scale(1.1);
+    font-weight: bold;
+    transition: color 0.5 ease;
+}
+section a{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+section.in-view a{
+    color: white;
+}
+
+section h3{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+section.in-view h3{
+    color: white;
+}
+
+section h4{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+section li{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+section.in-view li{
+    color: white;
+
+}
+
+.project {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #dc3545;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #dc3545;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.scale:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+nav a {
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    transform: scale(1.1);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    background-image: url('profile-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-top: 10px;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #222;
+}
+
+#back-to-top:hover {
+    background-color: #111;
+    transform: scale(1.1);
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#back-to-top:not(:hover) {
+    animation: pulsate 1.5s infinite;
+}
